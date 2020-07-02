@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+    <test name="ToolsQA" >
+        <classes>
+            <class name="test.PageOpenTest" />
+            <class name="test.TitleTest" />
+            <class name="test.FaviconTest" />
+            <class name="test.NavBarVisible"/>
+            <class name="test.LogoLinkTest"/>
+            <class name="test.NavBarValidLinks"/>
+            <class name="test.LogOutTest"/>
+            <class name="test.HoveringHighlight"/>
+            <class name="test.SelectedItemHighlight"/>
+        </classes>
+    </test>
+</suite>
