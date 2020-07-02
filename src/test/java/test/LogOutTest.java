@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class LogOutTest extends BaseTest {
     @Test
-    public void navBarVisibleTest() {
+    public void logoutTest() {
         Actions.loginPageActions().logIn(Constants.USERNAME,Constants.PASSWORD);
         Pages.mainPage().logOut();
 

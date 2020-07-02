@@ -14,6 +14,11 @@ public class MainPage extends PageTools {
 
 
 
+    public void logOut () {
+        click(logOutButton);
+        click(logOutButton);
+    }
+
     public boolean isUserMenuExist () {
         getElementText(userMenu);
         return isElementExists(userMenu);
@@ -40,10 +45,6 @@ public class MainPage extends PageTools {
         getElementAttributeValue("href", logoButton);
         return getElementAttributeValue("href", logoButton).contains("/start");
     }
-    public void logOut () {
-        click(logOutButton);
-        click(logOutButton);
-    }
     public boolean isElementsHightlightedAfterHover () {
         String color;
         String highlightedColor;
@@ -63,6 +64,7 @@ public class MainPage extends PageTools {
     public boolean isSelectedElementsHightlighted() {
         String notHighlightedFW = getElementCssValue("font-weight", navMenuItem, 4);
         String fw;
+
         for (int i = 1; i <=4; i++) {
             click(navMenuItem, i);
             fw = getElementCssValue("font-weight", navMenuItem, i);
@@ -70,6 +72,4 @@ public class MainPage extends PageTools {
         }
         return true;
     }
-
-
 }

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class FaviconTest extends BaseTest {
     @Test
-    public void siteOpeningTest() {
+    public void faviconTest() {
         Actions.loginPageActions().logIn(Constants.USERNAME,Constants.PASSWORD);
         Assert.assertTrue(Pages.mainPage().isFaviconExist());
     }
