@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <testng>7.0.0</testng>
+        <testng>7.5.1</testng>
         <selenide>5.5.1</selenide>
         <assertj>3.14.0</assertj>
         <logback>1.2.3</logback>
